@@ -1,0 +1,23 @@
+package com.dsm.utils
+
+import com.typesafe.config.Config
+
+object Constants {
+//  val ACCESS_KEY = "<ACCESS_KEY>"
+//  val SECRET_ACCESS_KEY = "<SECRET_ACCESS_KEY>"
+//  val S3_BUCKET = "<BUCKET_NAME>"
+  val ACCESS_KEY = "AKIA2477WNKNZ6ZYPAOZ"
+  val SECRET_ACCESS_KEY = "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"
+  val S3_BUCKET = "new-saurabh"
+  val ERROR = "ERROR"
+
+  def getRedshiftJdbcUrl(redshiftConfig: Config): String = {
+    val host = redshiftConfig.getString("host")
+    val port = redshiftConfig.getString("port")
+    val database = redshiftConfig.getString("database")
+    val username = redshiftConfig.getString("username")
+    val password = redshiftConfig.getString("password")
+    s"jdbc:redshift://${host}:${port}/${database}?user=${username}&password=${password}"
+  }
+
+}
