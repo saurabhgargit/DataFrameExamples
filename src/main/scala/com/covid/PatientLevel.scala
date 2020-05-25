@@ -13,6 +13,9 @@ object PatientLevel {
     sparkSession.sparkContext.setLogLevel("ERROR")
 
 
+
+
+
   }
 
 }
