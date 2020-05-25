@@ -12,16 +12,18 @@ object DFJSONAssignment {
 
     import sparkSession.implicits._
 
-    val employeeDf = sparkSession.read
-      //.json("s3n://" + Constants.S3_BUCKET + "/cart_sample_small.txt")
-        .json("/Users/saurabh.garg/Downloads/BigDataLearning/data/jsonAssign.json")
+    val employeeDf = sparkSession.read.option("multiline", "true")
+
+        .json("/Users/saurabh.garg/Downloads/BigDataLearning/data/multiLineJSON.json")
 
     employeeDf.printSchema()
     employeeDf.show(false)
 
-    employeeDf.withColumn("EmailID",explode($"email.mobile")).alias("helloJi").show()
+   // employeeDf.withColumn("EmailID",explode($"email.mobile")).alias("helloJi").show()
 
     //employeeDf.select(explode($"email").alias("flatt")).show(false)
   }
 
 }
+
+

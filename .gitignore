@@ -9,8 +9,9 @@ project/project/
 project/target/
 target/
 build/
+src/main/scala/com/dsm/utils/Constants.scala
 src/main/resources/data/
-
+.env
 # intellij idea
 *.log
 *.iml

@@ -9,7 +9,7 @@ object FinanceDataAnalysis {
   def main(args: Array[String]): Unit = {
     val sparkSession = SparkSession
       .builder
- //     .master("local[*]")
+      //.master("local[*]")
       .appName("Dataframe Example")
       .getOrCreate()
     sparkSession.sparkContext.setLogLevel(Constants.ERROR)
