@@ -3,7 +3,7 @@ package com.dsm.utils
 import com.typesafe.config.Config
 
 object Constants {
-//  val ACCESS_KEY = "<ACCESS_KEY>"
+//  val ACCESS_KEY = "abcd"
 //  val SECRET_ACCESS_KEY = "<SECRET_ACCESS_KEY>"
 //  val S3_BUCKET = "<BUCKET_NAME>"
   val ERROR = "ERROR"
