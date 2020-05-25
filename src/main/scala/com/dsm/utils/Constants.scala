@@ -6,9 +6,6 @@ object Constants {
 //  val ACCESS_KEY = "<ACCESS_KEY>"
 //  val SECRET_ACCESS_KEY = "<SECRET_ACCESS_KEY>"
 //  val S3_BUCKET = "<BUCKET_NAME>"
-  val ACCESS_KEY = "AKIA2477WNKNVLZPXRU2"
-  val SECRET_ACCESS_KEY = "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"
-  val S3_BUCKET = "new-saurabh"
   val ERROR = "ERROR"
 
   def getRedshiftJdbcUrl(redshiftConfig: Config): String = {
