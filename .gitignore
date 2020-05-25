@@ -9,6 +9,7 @@ project/project/
 project/target/
 target/
 build/
+.gitignore
 .conf
 src/main/scala/com/dsm/utils/Constants.scala
 src/main/resources/data/
